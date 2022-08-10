@@ -1,19 +1,42 @@
 {
     "name": "Профтех Extended",
     "description": "Сделай профтех более user-friendly!",
-    "version": "1.0",
+    "version": "1.2",
     "manifest_version": 2,
     "permissions": [
         "clipboardRead",
+        "clipboardWrite",
         "storage",
         "tabs",
+        "https://ais.ks54.ru/",
         "https://prof.mos.ru/pages/application/applications.xhtml*",
         "https://prof.mos.ru/pages/application/application.xhtml*"
     ],
     "content_scripts": [
         {
             "matches": [
-                "https://prof.mos.ru/pages/application/application.xhtml*"
+                "https://ais.ks54.ru/?s=abitur&ident=*"
+            ],
+            "css": [
+            ],
+            "js": [
+                "/ais/anketa.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://prof.mos.ru/pages/application/application.xhtml?faces-redirect=*"
+            ],
+            "css": [
+                "/profteh/style.css"
+            ],
+            "js": [
+                "/profteh/page_no_budget.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://prof.mos.ru/pages/application/application.xhtml?applicationId=*"
             ],
             "css": [
                 "/profteh/style.css"
