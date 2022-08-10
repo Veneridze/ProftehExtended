@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <script src="/popup.js"></script> -->
+    </script>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+            width: 200px;
+        }
+
+        main aside {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .title {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <aside>
+            <div>
+                <img src="/icons/16.png" width="80px" alt="" srcset="">
+            </div>
+            <strong class="title">Профтех<br>Extended</strong>
+        </aside>
+        <aside>
+            <input disabled checked onchange="alert('test')" id="check_lists" type="checkbox">
+            <label for="check_lists">Скрывать лишнее</label>
+        </aside>
+        <aside>
+            <input disabled checked onchange="alert('test')" id="check_lists" type="checkbox">
+            <label for="check_lists">Показывать чеклисты</label>
+        </aside>
+        <aside>
+            <input disabled checked onchange="alert('test')" id="check_lists" type="checkbox">
+            <label for="check_lists">На весь экран</label>
+        </aside>
+        <aside>
+            <a disabled href="">Редактировать чеклисты</a>
+        </aside>
+        <!-- <aside>
+            <input id="check_full_screen" type="checkbox" name="">
+            <label for="check_full_screen">На весь экран</label>
+        </aside> -->
+    </main>
+</body>
+
+</html>
