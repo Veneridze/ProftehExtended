@@ -1,4 +1,4 @@
-const FieldsMatch = {
+﻿const FieldsMatch = {
   surname:"form:applicationLastName",
   name:"form:applicationFirstName",
   father:"form:applicationMiddleName",
@@ -14,8 +14,8 @@ const FieldsMatch = {
   phone_mob:"form:applTab:contactPhone:j_idt437",
   email:"form:applTab:contactEmail:j_idt441",
   //med_polis: "form:applTab:j_idt464:j_idt427",
-  address_register_type:"form:applTab:regType:j_idt352_input",
-  address_register_city:"form:applTab:j_idt477:j_idt352_input",
+  //address_register_type:"form:applTab:regType:j_idt352_input",
+  //address_register_city:"form:applTab:j_idt477:j_idt352_input",
   ed_level:"form:applTab:j_idt503:j_idt352_input",
   school_year:"form:applTab:graduationYear",
   att_type:"form:applTab:j_idt508:j_idt352_input",
@@ -69,7 +69,7 @@ function AdditionActions(data) {
   if(data['ed_level'] == 'SCH9') {
     document.getElementById('form:applTab:j_idt508:j_idt352_input').value = "Аттестат об основном общем образовании";
   } else if(data['ed_level'] == 'SCH11') {
-    document.getElementById('form:applTab:j_idt508:j_idt352_input').value = "Аттестат о среднем (полном) общем образовании";
+    document.getElementById('form:applTab:j_idt508:j_idt352_input').value = "Аттестат о среднем общем образовании";
   }
 
   /*case "att_type": 
